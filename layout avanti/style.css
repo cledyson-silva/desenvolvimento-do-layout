@@ -1,0 +1,452 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+.fixado {
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  background-color: #0f66fe;
+  color: white;
+  justify-content: center;
+  font-size: 0.85rem;
+  align-items: center;
+  height: 2rem;
+}
+
+  .discount_amount {
+    background-color: #692ac3;
+    border-radius: 7px;
+  }
+
+  .coupon_code {
+    font-weight: normal;
+  }
+
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .header .barra {
+    display: none;
+  }
+
+  .header .logo{
+    width: 9.5rem;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  #search_input {
+    margin-right: 16rem;
+    width: 35rem;
+    border: 0.06rem solid #ccc;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    font-weight: bold;
+  }
+
+  .header button {
+    background: none;
+    cursor: pointer;
+    border: none;
+    transform: translateX(-19rem) translateY(0.2rem);
+    
+    
+  }
+
+  .blue_icon {
+    margin-right: 0.5rem;
+  }
+
+  .hello_user {
+    font-size: 0.9rem;
+    margin-right: 1.5rem;
+  }
+
+  .hello_user p {
+    line-height: 0;
+    text-align: left;
+
+  }
+
+  .header .carrinho_icon {
+    width: 2.5rem;
+
+  }
+
+  .menu_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    
+  }
+
+  .categories {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 1rem;
+
+  }
+
+  .list_department {
+    display: flex;
+    font-size: 0.85rem;
+    list-style: none;
+    gap: 3rem;
+    margin-right: 2rem;
+  }
+
+  .section_1 {
+    display: flex;
+    background-color: #E7E7EA;
+    justify-content: center;
+    padding-top: 10rem;
+  }
+
+  .super_sale {
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;   
+  text-align: center;
+  gap: 0.5rem;     
+}
+
+.super_sale h1,
+.super_sale h2,
+.super_sale h3 {
+  margin: 0;
+}
+
+  .section_1 h1 {
+    font-size: 5.5rem;
+  }
+  
+  .section_1 span {
+    font-weight: normal;
+  }
+
+  .section_1 h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.33rem;
+    color: #0f66fe;
+  }
+
+  .section_1 h2 {
+    font-size: 3.5rem;
+    color: #0f66fe;
+  }
+
+  .carrossel-container {
+    padding: 2rem;
+    margin: 0 auto;
+    width: 80rem;
+  }
+  
+  .carrossel-container h2 {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  
+  .swiper {
+    padding: 1.3rem;
+    padding-bottom: 2rem;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .tag {
+    position: static;
+    top: 10px;
+    left: 10px;
+    background-color: #00264E;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+  
+  .card h3 {
+    font-size: 0.75rem;
+    font-weight: normal;
+  }
+  
+  .preco-antigo {
+    text-decoration: line-through;
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: -0.5rem;
+    
+  }
+  
+  .preco-atual {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: -0.8rem;
+  }
+  
+  .desconto {
+    color: rgb(255, 255, 255);
+    background-color: #5EC0BE;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+  }
+  
+  .parcelamento {
+    font-size: 0.75rem;
+    color: #555;
+    margin-top: -1rem;
+  }
+  
+  .parcelamento span {
+    font-weight: bold;
+  }
+  
+  .btn-comprar {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 0.31rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  
+  .btn-comprar:hover {
+    background-color: #004ecc;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #000;
+    opacity: 0.5;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #007bff;
+    opacity: 1;
+  }
+  
+
+  .banner_2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .banner_2 p {
+    font-size: 1.1rem;
+  }
+
+  .lorem_1 {
+    max-width: 25rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+  }
+
+
+  .banner_3 {
+    background-color: #DEDEDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    margin-top: 3rem;
+  }
+
+  .lorem_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 3rem;
+  }
+
+  .lorem_2 h1 {
+    font-size: 2rem;
+    color: #4F4F4F;
+  }
+
+  .lorem_2 p {
+    display: flex;
+    color: #4F4F4F;
+    font-size: 1.12rem;
+    max-width: 30rem;
+  }
+
+  #location {
+    height: 5.5rem;
+    margin-right: 1.2rem;
+    text-align: center;
+
+  }
+
+  .banner_4 {
+    display: flex;
+    background-image: url(midia/back_avanti.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 76vh;
+    align-items: center;
+    color: white;
+  }
+
+  .banner_4_p {
+    background-color: #0f66fe;
+    font-size: 1.7rem;
+    text-align: center;
+    width: 100%;
+    
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer span {
+    color: #005CFF;
+  }
+
+  .inputs {
+    display: flex;
+    background-color: #DEDEDE;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem;
+    margin: 0rem 18rem;
+    border-radius: 0.5rem;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+  width: 15rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+}
+
+.aceito {
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.aceito a {
+  color: black;
+}
+
+.button {
+  color: white;
+  background-color: #005CFF;
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.logo_avanti2 {
+  width: 9rem;
+}
+
+.footer_links {
+  background-color: #F5F5F5;
+  height: 29rem;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+.footer_columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logoeicon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.cards {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer_links span {
+  font-weight: normal;
+}
+
+.break {
+  display: block;
+}
+
+.footer_final {
+  text-align: center;
+  align-content: center;
+  height: 16rem;
+}
+
+.footer_final p {
+  font-size: 0.75rem;
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-images {
+  margin-top: 3rem;
+}
+
